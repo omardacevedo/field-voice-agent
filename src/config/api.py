@@ -12,7 +12,7 @@ api = NinjaAPI(
     urls_namespace="api",
 )
 
-api.register_controllers(NinjaJWTDefaultController)
+#api.add_router("/auth", NinjaJWTDefaultController)
 
 api.add_router("/technicians", users_router, tags=["Technicians"])
 api.add_router("/reports", reports_router, tags=["Reports"])
